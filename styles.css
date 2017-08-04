@@ -1,4 +1,6 @@
 html {
+	width: 100%;
+	width: 100%;
 	background: #DBDBDB;
 }
 
@@ -8,37 +10,39 @@ main {
 	padding: 1%;
 	border: solid 1px;
 }
-
-a:hover {
-	color: red;
+table {
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-a:visited {
-	color: orange;
+img {
+    display: block;
+    margin-left: auto:
+    margin-right:auto;
 }
 
-.center img {
-	display: block;
+img.bamboo {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 	width: 62%;
-	opacity: .5;
+	opacity: .7;
 	padding-bottom: 1%;
 	height: auto;
 }
+
 .firstpage {
 	position: absolute;
 	background:rgba(255,255,255,0.5);
-	left: 20%;
-	top: 10%;
+	left: 50%;
+	top: 20%;
 	padding: 1rem;
-	margin-left: auto;
-	margin-right: auto;
-	transform: translateY(-50%);
+	color:black;
+	text-align: center;
+	transform: translate(-50%, -50%);
 	font-variant: small-caps;
-	font-size: 4em;
-	min-height: 100px;
+	font-size: 2em;
 }
 
 .center2 img {
@@ -56,6 +60,14 @@ footer {
 	padding: 1%;
 }
 
+a:hover {
+	color: red;
+}
+
+a:visited {
+	color: orange;
+}
+
 #showcontent {
 	position: absolute;
 	width: 100%;
@@ -68,3 +80,9 @@ footer {
  @media screen and (min-width: 800px) {
      #showcontent {display: none;}
  }
+
+ @media screen and (max-width: 800px) {
+     .firstpage {font-size:80%;
+     			 top: 6%;}
+  }
+}
